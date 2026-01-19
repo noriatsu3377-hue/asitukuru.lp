@@ -95,6 +95,21 @@ a { color: var(--accent); text-decoration: none; }
 .note { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; box-shadow: var(--shadow); }
 .note-title { font-weight: 700; margin-bottom: 6px; color: #c0f3d7; }
 
+/* Right-floated images for sections --------------------- */
+.float-right {
+  float: none;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  background: #0a0c12;
+}
+.float-right img { width: 100%; height: auto; display: block; border-radius: inherit; }
+@media (min-width: 800px) {
+  .float-right { float: right; width: min(42%, 360px); margin: 0 0 12px 16px; }
+}
+
 /* Accordion / Details ---------------------------------- */
 details { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; margin: 10px 0; box-shadow: var(--shadow); }
 details > summary { cursor: pointer; font-weight: 600; list-style: none; }
